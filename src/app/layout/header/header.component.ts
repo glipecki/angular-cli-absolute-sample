@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {DemoService} from 'app/sample/service/demo.service';
 
 @Component({
@@ -8,9 +8,10 @@ import {DemoService} from 'app/sample/service/demo.service';
 })
 export class HeaderComponent implements OnInit {
 
-  private msg:string;
+  private msg: string;
 
-  constructor(private demoService:DemoService) { }
+  constructor(private demoService: DemoService) {
+  }
 
   ngOnInit() {
     this.msg = this.demoService.hello();

@@ -1,13 +1,18 @@
 /* tslint:disable:no-unused-variable */
 
-import { TestBed, async } from '@angular/core/testing';
-import { AppComponent } from './app.component';
+import {TestBed, async} from '@angular/core/testing';
+import {AppComponent} from 'app/app.component';
+import {HeaderComponent} from 'app/layout/header/header.component';
+import {DemoService} from 'app/sample/service/demo.service';
 
 describe('App: DemoNg2', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
+      providers: [
+        DemoService
+      ],
       declarations: [
-        AppComponent
+        AppComponent, HeaderComponent
       ],
     });
   });

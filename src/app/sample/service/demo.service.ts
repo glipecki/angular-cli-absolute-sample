@@ -1,11 +1,12 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 
 @Injectable()
 export class DemoService {
 
-  constructor() { }
+  constructor() {
+  }
 
-  hello():string {
+  hello(): string {
     return 'Demo service';
   }
 
